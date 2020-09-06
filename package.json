@@ -1,0 +1,10 @@
+{
+  "name": "webfiller-indexeddb",
+  "version": "0.0.1",
+  "description": "This is an in memory implementation of the IndexedDB. It is not meant to be used as a production implementation of IndexedDB. The implementation follows the W3C Indexed Database API 3.0 and uses the W3C webidl2.js parser to generate the object definitions. The project is inspired by the work done by JSDom",
+  "main": "index.js",
+  "repository": "git@github.com:unwall/webfiller-indexeddb.git",
+  "author": "Darren Seet <darren@seet.dev> (https://www.writan.me/)",
+  "license": "MIT",
+  "private": false
+}
