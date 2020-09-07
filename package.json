@@ -14,7 +14,7 @@
     "prettier:write": "npm run prettier --  --write",
     "prettier:check": "npm run prettier --  --list-different",
     "tsc:check": "tsc",
-    "validate": "npm run tsc:check && npm run prettier:check && npm run lint && npm run build"
+    "validate": "npm-run-all --parallel tsc:check && npm run prettier:check && npm run lint && npm run build"
   },
   "devDependencies": {
     "@babel/cli": "7.11.6",
@@ -27,6 +27,7 @@
     "eslint-config-prettier": "6.11.0",
     "husky": "4.3.0",
     "lint-staged": "10.3.0",
+    "npm-run-all": "4.1.5",
     "prettier": "2.1.1",
     "typescript": "4.0.2"
   }
