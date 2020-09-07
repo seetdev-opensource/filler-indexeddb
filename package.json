@@ -1,10 +1,20 @@
 {
-  "name": "webfiller-indexeddb",
+  "name": "filler-indexeddb",
   "version": "0.0.1",
   "description": "This is an in memory implementation of the IndexedDB. It is not meant to be used as a production implementation of IndexedDB. The implementation follows the W3C Indexed Database API 3.0 and uses the W3C webidl2.js parser to generate the object definitions. The project is inspired by the work done by JSDom",
   "main": "index.js",
-  "repository": "git@github.com:unwall/webfiller-indexeddb.git",
+  "repository": "git@github.com:unwall/filler-indexeddb.git",
   "author": "Darren Seet <darren@seet.dev> (https://www.writan.me/)",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "eslint": "7.8.1"
+  }
 }
